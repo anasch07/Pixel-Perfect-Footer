@@ -2,6 +2,7 @@ import Image from 'next/image';
 import facebook from '@/../public/socialMediaIcons/facebook.svg';
 import twitter from '@/../public/socialMediaIcons/twitter.svg';
 import instagram from '@/../public/socialMediaIcons/instagram.svg';
+import Link from 'next/link';
 
 export default function Footer() {
 	return (
@@ -61,13 +62,19 @@ export default function Footer() {
 					<div className="flex gap-x-2.5">
 						{/*    icons*/}
 						<span className="bg-facebookBlue rounded-iconRadius p-2">
-							<Image src={facebook} alt="facebook" />
+							<Link href="/">
+								<Image src={facebook} alt="facebook" />
+							</Link>
 						</span>
 						<span className="bg-twitterBlue rounded-iconRadius p-2">
-							<Image src={twitter} alt="twitter" />
+							<Link href="/">
+								<Image src={twitter} alt="twitter" />
+							</Link>
 						</span>
 						<span className="bg-gradient-to-bl from-[#9D23E4] via-[#C47067] to-[#FFB73D] rounded-iconRadius p-2">
-							<Image src={instagram} alt="instagram" />
+							<Link href="/">
+								<Image src={instagram} alt="instagram" />
+							</Link>
 						</span>
 					</div>
 				</div>
